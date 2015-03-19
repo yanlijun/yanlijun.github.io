@@ -570,7 +570,7 @@ shareToSN=function(title,url,pic){
 	window.open(_u,'分享到新浪微博','height=480,width=608,top=100,left=200,toolbar=no,menubar=no,resizable=yes,location=yes,status=no');
 },
 shareToTT=function(title,url,pic){
-	var _u='http://share.v.t.qq.com/index.php',//http://v.t.qq.com/share/share.php
+	var _u='http://v.t.qq.com/share/share.php',  // jump to http://share.v.t.qq.com/index.php
 		_title=encodeURI(title),_url=encodeURIComponent(url),_pic=encodeURI(pic),_appkey=encodeURI('801389739'),_site='http://yanlijun.com';
 	_u+='?title='+_title+'&url='+_url+'&pic='+_pic+'&appkey='+_appkey+'&site='+_site;
 	window.open(_u,'分享到腾讯微博','height=480,width=608,top=100,left=200,toolbar=no,menubar=no,resizable=yes,location=yes,status=no');
