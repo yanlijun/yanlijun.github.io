@@ -1,0 +1,540 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <style type="text/css">
+	    * {
+		    font-family: 'robotothin','minijianxiyuan73073001d17b5','Microsoft Yahei','Microsoft Sans Serif',arial,sans-serif;
+		}
+        body{
+            margin: 0 30px 100px;
+			font-size: 1.2em;
+			line-height: 1.4;
+            color: #888
+        }
+        h2,h3,h4,h5{font-weight:normal}
+        h4{margin:30px 0 12px;color:#5A6EF9}
+        h5{margin:12px 0 6px;color:#EC5D43}
+        h5 span{color:#666}
+        figure,p{margin:6px 0 10px}
+        canvas{border:1px solid #ccc}
+        .raleway-thin{font-family:'Raleway','robotothin'}
+        @font-face {
+            font-family: 'robotothin';
+            src: url('http://oh0x5hnex.bkt.clouddn.com/font/roboto/roboto-thin.eot');
+            src: url('http://oh0x5hnex.bkt.clouddn.com/font/roboto/roboto-thin.eot?#iefix') format('embedded-opentype'),
+            url('http://oh0x5hnex.bkt.clouddn.com/font/roboto/roboto-thin.woff') format('woff'),
+            url('http://oh0x5hnex.bkt.clouddn.com/font/roboto/roboto-thin.ttf') format('truetype'),
+            url('http://oh0x5hnex.bkt.clouddn.com/font/roboto/roboto-thin.svg#robotothin') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'FZLanTingHeiS-UL-GB';
+            src: url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/46601/46601.gif');
+            src: url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/46601/46601.gif?#iefix') format('embedded-opentype'),
+            url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/46601/46601.bmp') format('woff'),
+            url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/46601/46601.jpg') format('truetype'),
+            url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/46601/46601.png#FZLanTingHeiS-UL-GB') format('svg');
+        }
+        @font-face {
+            font-family: 'ZHSRXT--GBK1-0';
+            src: url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/45872/45872.gif');
+            src: url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/45872/45872.gif?#iefix') format('embedded-opentype'),
+            url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/45872/45872.bmp') format('woff'),
+            url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/45872/45872.jpg') format('truetype'),
+            url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/45872/45872.png#ZHSRXT--GBK1-0') format('svg');
+        }
+        @font-face {
+            font-family: 'zzgfyueheiTX';
+            src: url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/46810/46810.gif');
+            src: url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/46810/46810.gif?#iefix') format('embedded-opentype'),
+            url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/46810/46810.bmp') format('woff'),
+            url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/46810/46810.jpg') format('truetype'),
+            url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/youziku/46810/46810.png#zzgfyueheiTX') format('svg');
+        }
+		
+    </style>
+    <!--<link href='//cdn.webfont.youziku.com/webfonts/nomal/6069/19505/58340aaef629d816742d3687.css' rel='stylesheet' type='text/css' />-->
+    <script type="text/javascript" src="http://oh0x5hnex.bkt.clouddn.com/js/webfont.js"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            custom: {
+                urls: [
+                    'http://cdn.webfont.youziku.com/webfonts/nomal/6069/19505/58340aaef629d816742d3687.css'
+                    ,'http://cdn.webfont.youziku.com/webfonts/nomal/6069/19491/58340532f629d816742d3682.css'
+                    ,'http://cdn.webfont.youziku.com/webfonts/nomal/6069/46178/5834057bf629d816742d3683.css'
+                    ,'http://cdn.webfont.youziku.com/webfonts/nomal/6069/19681/583405e3f629d816742d3684.css'
+                    //,'http://fonts.googleapis.com/css?family=Raleway:Thin'
+                ]
+            }
+        });
+    </script>
+</head>
+<body>
+
+<div>
+
+    <!-- 一 网页字体 -->
+    <h2 style="font-family: 'FZLanTingHeiS-UL-GB';">方正兰亭超细黑简体 龙飞凤舞 中国文字之美（非授权）</h2>
+    <h2 style="font-family: 'ZHSRXT--GBK1-0';">张海山锐线体2.0 龙飞凤舞 中国文字之美（非授权）</h2>
+    <h2 style="font-family: 'zzgfyueheiTX';">造字工房悦黑特细体 龙飞凤舞 中国文字之美（非授权）</h2>
+    <h2 class="css7305d944a17b5">迷你简特细等线 龙飞凤舞 中国文字之美</h2>
+    <h2 class="css7305eb17217b5">四通利方细圆体简 龙飞凤舞 中国文字之美</h2>
+    <h2 class="css7306047c217b5">经典细圆简 龙飞凤舞 中国文字之美</h2>
+    <h2 class="raleway-thin">Grumpy wizards make toxic brew for the evil Queen and Jack. Kevin Yan!</h2>
+    <h4 class="minijianxiyuan73073001d17b5">常用基本标签</h4>
+
+    <!-- 二 常用语义标签 -->
+    <header>header 标签</header>
+    <nav>nav 标签</nav>
+    <article>article 标签</article>
+    <section>section 标签</section>
+    <aside>aside 标签</aside>
+    <footer>footer 标签</footer>
+
+    <h4>details 标签： 定义了附加的信息，用户可以查看或隐藏</h4>
+    <details>
+        <summary>summary 标签： 定义 details 标签的头部</summary>
+        <p>details 标签，内容部分</p>
+    </details>
+    <h4>figure 标签： 定义自包含的内容，如插图，图表，照片，代码清单等。</h4>
+    <figure>
+        <figcaption>figcaption 标签： 定义 figure 标签的标题</figcaption>
+        <p>figure 标签，内容部分</p>
+    </figure>
+
+    <!-- 三 -->
+    <h4>一些新功能标签</h4>
+    <h5>progress 标签： 进度条</h5>
+    <progress>progress 标签</progress>
+
+    <h5>dialog 标签： 弹出框</h5>
+    <dialog>
+        <p>这是一个弹出框</p>
+        <button id="close">关闭</button>
+    </dialog>
+    <button id="show">打开对话框！</button>
+    <script type="text/javascript">
+        var dialog = document.querySelector('dialog');
+        document.querySelector('#show').onclick = function() {
+            dialog.show();
+        };
+        document.querySelector('#close').onclick = function() {
+            dialog.close();
+        };
+    </script>
+
+    <!-- 四 -->
+    <h4>新 input 类型</h4>
+    <h5>number： </h5>
+    <input type="number" name="quantity" min="1" max="5"> -
+    <input type="number" name="points1" min="0" max="100" step="10" value="30">
+
+    <h5>date： <span>(&gt;2013-12-31, &lt;2014-10-30)</span></h5>
+    <input type="date" name="bday" min="2013-12-31"> -
+    <input type="date" name="bday" max="2014-10-30">
+
+    <h5>color： </h5>
+    <input type="color" name="favcolor">
+
+    <h5>range： </h5>
+    0<input type="range" name="points2" min="0" max="10">10
+
+    <h5>month： </h5>
+    <input type="month" name="bdaymonth">
+
+    <h5>week： </h5>
+    <input type="week" name="week_year">
+
+    <h5>time： </h5>
+    <input type="time" name="usr_time">
+
+    <h5>datetime： </h5>
+    <input type="datetime" name="bdaytime1">
+
+    <h5>datetime-local： </h5>
+    <input type="datetime-local" name="bdaytime2">
+
+    <h5>email： </h5>
+    <form>
+        <input type="email" name="email" required>
+        <input type="submit">
+    </form>
+
+    <h5>search： </h5>
+    <input type="search" name="googlesearch">
+
+    <h5>tel： </h5>
+    <form>
+        <input type="tel" name="usrtel" required pattern="1(3|4|5|8)\d{9}">
+        <input type="submit">
+    </form>
+
+    <h5>url： </h5>
+    <form>
+        <input type="url" name="homepage" required>
+        <input type="submit">
+    </form>
+
+    <!-- 五 -->
+    <h4>新 input 属性</h4>
+    <h5>required, pattern： </h5>
+    <form>
+        <input type="text" name="country_code" required pattern="[A-Za-z]{3}" title="3 个字母">
+        <input type="submit">
+    </form>
+
+    <!-- 六 -->
+    <h4>新表单元素</h4>
+    <h5>datalist 标签： 定义预定义的选项输入控件</h5>
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+
+    <h5>keygen 标签： 定义了一个密钥对生成器字段</h5>
+    <keygen name="security"></keygen>
+
+    <h5>output 标签： 定义了一个计算的结果</h5>
+    <form id="output">
+        0<input type="range" name="aaa" id="aaa" value="50">100
+        +
+        <input type="number" name="bbb" id="bbb" value="50">
+        =
+        <output name="output" for="aaa bbb"></output>
+    </form>
+    <script type="text/javascript">
+        document.querySelector('#output').oninput = function() {
+            this.output.value = Number(this.aaa.value) + Number(this.bbb.value);
+        }
+    </script>
+
+    <!-- 七 -->
+    <h4>关于图像</h4>
+    <h5>canvas 标签： 定义使用 JS 绘制的图形</h5>
+    <canvas id="myCanvas" width="400" height="200">你的浏览器不支持 canvas 标签</canvas>
+    <script type="text/javascript">
+        (function() {
+            var myCanvas = document.querySelector("#myCanvas");
+            // 确保完全支持canvas
+            if (myCanvas.getContext) {
+                var ctx = myCanvas.getContext("2d");
+                // 路径开始
+                ctx.beginPath();
+                // 原形
+                ctx.arc(350,50,40,0,2*Math.PI);  // arc(x,y,r,start,stop)
+                // 直线
+                ctx.moveTo(140,90);  // 将画笔移至原点
+                ctx.lineTo(200,100);
+                ctx.lineTo(200,80);
+                // back to the starting point
+                ctx.closePath();
+                // 路径描边
+                ctx.stroke();
+
+                // 矩形边框
+                ctx.strokeStyle = "rgba(0,0,255,.5)";
+                ctx.strokeRect(200, 20, 50, 50);
+                // 文字
+                ctx.font = "30px Roboto, Arial";
+                ctx.fillText("Hello World",10,50);
+                ctx.strokeStyle = "black";
+                ctx.strokeText("你好明天",10,100);
+
+                // Create gradient
+                var grd1 = ctx.createLinearGradient(0,0,200,0);  // createLinearGradient(x,y,x1,y1)
+                grd1.addColorStop(0,"red");
+                grd1.addColorStop(1,"white");
+                // Fill with gradient
+                ctx.fillStyle = grd1;
+                ctx.fillRect(10,110,150,80);  // fillRect(x,y,width,height)
+
+                // Create gradient
+                var grd2 = ctx.createRadialGradient(235,150,5,250,160,100);  // createRadialGradient(x,y,r,x1,y1,r1)
+                grd2.addColorStop(0,"red");
+                grd2.addColorStop(1,"white");
+                // Fill with gradient
+                ctx.fillStyle = grd2;
+                ctx.fillRect(170,110,150,80);
+
+                myCanvas.addEventListener('mousemove', function(e) {
+                    console.log('(' + e.offsetX + ',' + e.offsetY + ')');
+                });
+            }
+        })();
+    </script>
+    <br>
+    <canvas id="testCanvas" width="400" height="200">你的浏览器不支持 canvas 标签</canvas>
+    <script type="text/javascript">
+        (function() {
+            var testCanvas = document.getElementById("testCanvas");
+            if (testCanvas.getContext) {
+                var ctx = testCanvas.getContext("2d");
+                // 填充画布
+                //ctx.fillStyle = "#EEEEFF";
+                //ctx.fillRect(0, 0, 200, 200);
+
+                // 测试理解 save() 和 restore()
+                ctx.fillStyle = "#ff0000";  // 红色
+                ctx.save();
+
+                ctx.fillStyle = "#00ff00";  // 绿色
+                ctx.translate(300, 100);
+                ctx.save();
+
+                ctx.fillStyle = "#0000ff";  // 蓝色
+                ctx.fillRect(0, 0, 100, 200);  // 在 (300,100)绘制一个蓝色的矩形
+                ctx.restore();  // fillStyle() 回到绿色位置的设置
+                ctx.fillRect(10, 10, 100, 200);  // 在(310, 110)处绘制一个绿色的矩形
+                ctx.restore();  // fillStyle() 回到红色位置的设置
+                ctx.fillRect(200, 0, 100, 200);  // 在(200, 0)处绘制一个红色的矩形
+
+
+                /*
+                 * 绘制时钟
+                 */
+                var clockRadius = testCanvas.height / 2 * .9, clockOrigin = clockRadius * 1.1,
+                        hourPointerWidth = 1.8, hourPointerLength = clockRadius * 1 / 3,
+                        minuPointerWidth = 1.4, minuPointerLength = clockRadius * 1 / 2,
+                        secoPointerWidth = 1, secoPointerLength = clockRadius * 2 / 3;
+
+                // 转换中心
+                ctx.translate(clockOrigin, clockOrigin);
+                // 初始加载
+                drawDialPlate(clockRadius);
+                showTime();
+                // 定时刷新
+                setInterval(function() {
+                    clearCircle(secoPointerLength);
+                    showTime();
+                }, 1000);
+
+                function showTime() {
+                    var data = new Date(),
+                            hour = data.getHours(),
+                            minu = data.getMinutes(),
+                            seco = data.getSeconds();
+
+                    showHour(hour, minu);
+                    showMinute(minu);
+                    showSecond(seco);
+                }
+                // 绘制时针
+                function showHour(hour, minu) {
+                    var angle = (hour % 12 + (minu / 60))/ 12 * 360;
+                    drawPointer(angle, hourPointerWidth, hourPointerLength);
+                }
+                // 绘制分针
+                function showMinute(minu) {
+                    var angle = minu / 60 * 360;
+                    drawPointer(angle, minuPointerWidth, minuPointerLength);
+                }
+                // 绘制秒针
+                function showSecond(seco) {
+                    var angle = seco / 60 * 360;
+                    drawPointer(angle, secoPointerWidth, secoPointerLength);
+                }
+                // 绘制指针
+                function drawPointer(angle, width, length){
+                    var radian = angle * Math.PI / 180;  // angle converted to radian
+                    ctx.save();
+                    ctx.rotate(radian);
+                    drawLine(0, 4, 0, -length, width);
+                    ctx.restore();
+                }
+                // 绘制线条
+                function drawLine(x, y, x1, y1, lw) {
+                    ctx.beginPath();
+                    ctx.lineWidth = lw;
+                    ctx.moveTo(x, y);
+                    ctx.lineTo(x1, y1);
+                    ctx.stroke();
+                }
+                // 绘制圆环
+                function drawCircle(radius, lw) {
+                    typeof lw !== 'number' && (lw = 1);
+                    ctx.beginPath();
+                    ctx.lineWidth = lw;
+                    ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+                    ctx.moveTo(radius - lw, 0);
+                    ctx.arc(0, 0, radius - lw, 0, 2 * Math.PI);
+                    ctx.stroke();
+                    //ctx.strokeStyle = "red";
+                    //ctx.fillRect(280, -90, 10, 10);
+                }
+                // 绘制表盘
+                function drawDialPlate(radius) {
+                    drawCircle(radius);
+
+                    ctx.fillStyle = "#000000";
+                    ctx.font = "bold 12px Arial";
+                    ctx.textAlign = "center";
+                    ctx.textBaseline = "middle";
+
+                    for (var i = 1; i < 61; i++) {
+                        var radian = 6 * i * Math.PI / 180;
+                        // 绘制数字
+                        if (i % 15 === 0) {
+                            ctx.fillText(i / 5,
+                                    radius * 0.74 * Math.cos(radian - Math.PI / 2),
+                                    radius * 0.74 * Math.sin(radian - Math.PI / 2)
+                            );
+                        } else if (i % 5 === 0) {
+                            ctx.fillText(i / 5,
+                                    radius * 0.80 * Math.cos(radian - Math.PI / 2),
+                                    radius * 0.80 * Math.sin(radian - Math.PI / 2)
+                            );
+                        }
+                        // 绘制时刻线
+                        ctx.save();
+                        ctx.rotate(radian);
+                        if (i % 5) {
+                            // 绘制分线
+                            //ctx.fillRect(0, -radius, .6, radius * .06);  // 时刻线会偏移
+                            drawLine(0, -radius, 0, -radius * .94, .6);
+                        } else {
+                            if (i % 15) {
+                                // 绘制短时线
+                                drawLine(0, -radius, 0, -radius * .88, 1.2);
+                            } else {
+                                // 绘制基本数字
+                                //ctx.fillText(i / 5, 0, -radius * .7);  // 数字也跟着旋转
+                                // 绘制长时线
+                                drawLine(0, -radius, 0, -radius * .84, 2);
+                            }
+                        }
+                        ctx.restore();
+                    }
+                }
+                // 清除时分秒针区域
+                function clearCircle(radius) {
+                    ctx.save();
+                    ctx.globalCompositeOperation = 'destination-out';  // http://silverlightchina.net/html/HTML_5/study/2013/0122/21606.html
+                    ctx.beginPath();
+                    ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.restore();
+                }
+
+
+                // 绘制表盘（旧方法）
+                function drawDialPlate_old(radius) {
+                    ctx.fillStyle = "#000000";
+                    ctx.font = "bold 10px Arial";
+                    ctx.textAlign = "center";
+                    ctx.textBaseline = "midddle";
+
+                    for (var i = 1; i < 5; i++) {
+                        /*
+                         ctx.fillText(3 * i,
+                         Math.round(Math.cos(90 * i * Math.PI / 180) * radius * .7),
+                         Math.round(Math.sin(90 * i * Math.PI / 180) * radius * .7)
+                         );
+                         */
+                        ctx.save();
+                        ctx.rotate(90 * i * Math.PI / 180);
+                        // 绘制基本时间数字
+                        ctx.fillText(3 * i, 0, -(radius * .7));
+                        // 绘制长时线
+                        ctx.fillRect(0, -radius, 2, radius * .16);
+                        ctx.restore();
+                        // 绘制短时线
+                        for (var j = 1; j < 3; j++) {
+                            ctx.save();
+                            ctx.rotate((90 * i + 30 * j) * Math.PI / 180);
+                            ctx.fillRect(0, -radius, 1.2, radius * .12);
+                            ctx.restore();
+                        }
+                        // 绘制分线
+                        for (var k = 1; k < 15; k++) {
+                            if (k % 5) {
+                                ctx.save();
+                                ctx.rotate((90 * i + 6 * k) * Math.PI / 180);
+                                ctx.fillRect(0, -radius, .6, radius * .06);
+                                ctx.restore();
+                            }
+                        }
+                    }
+                }
+
+                //<img id="scream" src="http://www.w3schools.com/tags/img_the_scream.jpg" alt="" width="220" height="277" style="display:none">
+                var screamImg = new Image();
+                screamImg.src = 'http://www.yanlijun.com/images/myphoto.jpg?' + Date.parse(new Date());
+
+                // 判断是否有缓存，图片src有时间戳就没必要了
+                if(screamImg.complete){
+                    console.log('complete');
+                    ctx.drawImage(screamImg, 90, 130, 50, 60, 210, -90, 50, 60);
+                }else{
+                    screamImg.onload = function() {
+                        // drawImage(img,x,y)
+                        // drawImage(img,x,y,width,height)
+                        // drawImage(img,sx,sy,swidth,sheight,x,y,width,height)
+                        ctx.drawImage(this, 0, 0, 50, 60, 210, -90, 50, 60);
+                    };
+                }
+
+            }
+        })();
+    </script>
+
+    <p>Video to use:</p>
+    <video id="video1" controls width="270" autoplay>
+        <source src="http://7xu8zs.com1.z0.glb.clouddn.com/mov_bbb.mp4" type='video/mp4;codecs="avc1.42E01E,mp4a.40.2"'>
+        <source src="http://7xu8zs.com1.z0.glb.clouddn.com/mov_bbb.ogg" type='video/ogg'>
+        <source src="http://7xu8zs.com1.z0.glb.clouddn.com/mov_bbb.webm" type='video/webm'>
+        <p>You need an HTML5 enabled browser to view this video.</p>
+    </video>
+
+    <p>Canvas (the code draws the current frame of the video every 20 millisecond):</p>
+    <canvas id="vCanvas" width="270" height="135" style="border:1px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas>
+    <script type="text/javascript">
+        (function() {
+            var video = document.getElementById("video1"),
+                    vCanvas = document.getElementById("vCanvas"),
+                    interval;
+            if (vCanvas.getContext) {
+                var ctx = vCanvas.getContext("2d");
+
+                video.addEventListener("play", function() {
+                    interval = setInterval(function() {
+                        ctx.drawImage(video,5,5,260,125)
+                    },20);
+                }, false);
+                video.addEventListener("pause", function() {
+                    clearInterval(interval);
+                }, false);
+                video.addEventListener("ended", function() {
+                    clearInterval(interval);
+                }, false);
+            }
+        })();
+    </script>
+
+    <h5>svg 标签： </h5>
+
+
+
+
+
+    <!-- 八 -->
+    <h4>多媒体</h4>
+    <h5>video 标签： </h5>
+    <video autoplay="true" width="400" height="150" loop="loop" onended="this.play()">
+        <source src="https://d3mlfyygrfdi2i.cloudfront.net/a144/hploop_0204.mp4" type="video/mp4">
+        <source src="https://d3mlfyygrfdi2i.cloudfront.net/90da/hploop_0204.webm" type="video/webm">
+        <img src="https://d3mlfyygrfdi2i.cloudfront.net/9d45/hploop_0204.jpg">
+        <p>You need an HTML5 enabled browser to view this video.</p>
+    </video>
+
+</div>
+
+</body>
+</html>
